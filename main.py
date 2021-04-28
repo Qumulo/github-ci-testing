@@ -1,14 +1,12 @@
-import unittest
 
-class HelloWorldTest(unittest.TestCase):
+def add(x: int, y: int) -> int:
+    return x + y
 
-    def test_math(self):
-        self.assertEqual(2 + 2, 4)
 
-    def test_string(self):
-        self.assertTrue('FOO'.isupper())
-        self.assertFalse('Foo'.isupper())
+def main() -> None:
+    print("Hello, world!")
+    print("2 + 2 is", add(2, 2))
 
 
 if __name__ == '__main__':
-    unittest.main()
+    main()
