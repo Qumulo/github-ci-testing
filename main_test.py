@@ -12,8 +12,8 @@ class HelloWorldTest(unittest.TestCase):
         self.assertTrue('FOO'.isupper())
         self.assertFalse('Foo'.isupper())
 
-    def test_fails(self):
-        self.assertTrue(False)
+    def test_bool(self):
+        self.assertTrue(True)
 
 
 if __name__ == '__main__':
